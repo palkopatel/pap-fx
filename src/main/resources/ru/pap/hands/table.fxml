@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pap.controllers.Table">
+    <children>
+        <GridPane minWidth="450" gridLinesVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+         <children>
+             <fx:include fx:id="handRow_0" source="row.fxml" />
+             <fx:include fx:id="handRow_1" source="row.fxml" GridPane.rowIndex="1" />
+             <fx:include fx:id="handRow_2" source="row.fxml" GridPane.rowIndex="2" />
+             <fx:include fx:id="handRow_3" source="row.fxml" GridPane.rowIndex="3" />
+             <fx:include fx:id="handRow_4" source="row.fxml" GridPane.rowIndex="4" />
+             <fx:include fx:id="handRow_5" source="row.fxml" GridPane.rowIndex="5" />
+             <fx:include fx:id="handRow_6" source="row.fxml" GridPane.rowIndex="6" />
+             <fx:include fx:id="handRow_7" source="row.fxml" GridPane.rowIndex="7" />
+             <fx:include fx:id="handRow_8" source="row.fxml" GridPane.rowIndex="8" />
+             <fx:include fx:id="handRow_9" source="row.fxml" GridPane.rowIndex="9" />
+             <fx:include fx:id="handRow_10" source="row.fxml" GridPane.rowIndex="10" />
+             <fx:include fx:id="handRow_11" source="row.fxml" GridPane.rowIndex="11" />
+             <fx:include fx:id="handRow_12" source="row.fxml" GridPane.rowIndex="12" />
+         </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="20.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pap.controllers.Row">
+    <children>
+        <GridPane minHeight="20" gridLinesVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+         <children>
+             <fx:include fx:id="handCell_0" source="square.fxml" />
+             <fx:include fx:id="handCell_1" source="square.fxml" GridPane.columnIndex="1" />
+             <fx:include fx:id="handCell_2" source="square.fxml" GridPane.columnIndex="2" />
+             <fx:include fx:id="handCell_3" source="square.fxml" GridPane.columnIndex="3" />
+             <fx:include fx:id="handCell_4" source="square.fxml" GridPane.columnIndex="4" />
+             <fx:include fx:id="handCell_5" source="square.fxml" GridPane.columnIndex="5" />
+             <fx:include fx:id="handCell_6" source="square.fxml" GridPane.columnIndex="6" />
+             <fx:include fx:id="handCell_7" source="square.fxml" GridPane.columnIndex="7" />
+             <fx:include fx:id="handCell_8" source="square.fxml" GridPane.columnIndex="8" />
+             <fx:include fx:id="handCell_9" source="square.fxml" GridPane.columnIndex="9" />
+             <fx:include fx:id="handCell_10" source="square.fxml" GridPane.columnIndex="10" />
+             <fx:include fx:id="handCell_11" source="square.fxml" GridPane.columnIndex="11" />
+             <fx:include fx:id="handCell_12" source="square.fxml" GridPane.columnIndex="12" />
+         </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -33,7 +33,7 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("App.fxml"));
-        Scene scene = new Scene(root, 1400, 900);
+        Scene scene = new Scene(root, 1350, 800);
 
         primaryStage.setTitle("PAP Application");
         primaryStage.setScene(scene);
