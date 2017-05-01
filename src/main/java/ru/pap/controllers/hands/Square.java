@@ -1,9 +1,8 @@
-package ru.pap.controllers;
+package ru.pap.controllers.hands;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,6 +20,6 @@ public class Square implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        logger.log(Level.INFO, "initialize.. " + this.getClass().getName());
+//        logger.log(Level.INFO, "initialize.. " + this.getClass().getName());
     }
 }

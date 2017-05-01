@@ -1,4 +1,4 @@
-package ru.pap.controllers;
+package ru.pap.controllers.hands;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -60,6 +60,6 @@ public class Row implements Initializable {
             Label label = (Label) ((GridPane) children.get(0)).getChildren().get(0);
             label.setText(card);
         }
-        logger.log(Level.INFO, "initialize.. " + this.getClass().getName());
+//        logger.log(Level.INFO, "initialize.. " + this.getClass().getName());
     }
 }

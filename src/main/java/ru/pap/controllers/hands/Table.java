@@ -1,4 +1,4 @@
-package ru.pap.controllers;
+package ru.pap.controllers.hands;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

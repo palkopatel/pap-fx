@@ -1,21 +1,14 @@
 package ru.pap;
 
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.TilePane;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import ru.pap.controllers.BetGrid;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * http://docs.oracle.com/javafx/2/layout/builtin_layouts.htm
@@ -30,20 +23,25 @@ public class App extends Application {
         launch(args);
     }
 
+    private static final Map<Class, Object> controllers = new ConcurrentHashMap<>();
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("App.fxml"));
+        FXMLLoader loader = new FXMLLoader(App.class.getResource("App.fxml"));
+        Parent root = loader.load();
         Scene scene = new Scene(root, 1350, 800);
-
         primaryStage.setTitle("PAP Application");
         primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("favicon.png")));
         primaryStage.show();
-//        primaryStage.setTitle("PAP Application");
-//        Button btn = new Button("OK");
-//        Pane root = new TilePane();
-//        root.getChildren().add(btn);
-//        primaryStage.setScene(new Scene(root, 300, 250));
-//        primaryStage.show();
     }
 
+
+    public static void register(Class<?> className, Object controller) {
+        controllers.put(className, controller);
+    }
+
+    public static Object getController(Class<?> className) {
+        return controllers.get(className);
+    }
 }

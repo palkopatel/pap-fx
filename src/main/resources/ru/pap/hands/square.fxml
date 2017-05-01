@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #888888" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pap.controllers.Square">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #888888" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pap.controllers.hands.Square">
     <padding>
         <Insets bottom="0.0" left="4.0" right="4.0" top="2.0" />
     </padding>
